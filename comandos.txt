@@ -1,0 +1,4 @@
+-d = força roda em sengundo plano
+-v = compartilha a mesma pasta local no container ex(-v $(pwd):/home)
+-p = seta o forword da porta ex(-p 8000:80) 8000 = porta do notebook e 80 = porta do container
+ps = verifica os container em execuçao
