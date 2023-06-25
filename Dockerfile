@@ -1,3 +1,5 @@
-FROM node:14.17.0-slim
+FROM ubuntu:latest
+
+WORKDIR /home/dev
 
 CMD [ "tail", "-f", "/dev/null" ]

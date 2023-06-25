@@ -1,4 +1,12 @@
 -d = força roda em sengundo plano
--v = compartilha a mesma pasta local no container ex(-v $(pwd):/home)
--p = seta o forword da porta ex(-p 8000:80) 8000 = porta do notebook e 80 = porta do container
-ps = verifica os container em execuçao
+-v <local>:<container> = compartilha a mesma pasta local no container ex(-v $(pwd):/home)
+-p <local>:<container> = seta o forword da porta ex(-p 8000:80) 8000 = porta do notebook e 80 = porta do container
+docker run = cria um container
+docker ps = verifica os container em execuçao
+docker stop = para a execuçao de um container
+docker logs <container> = exibe os logs do container
+docker images = mostra todas as imagens baixadas
+docker exec -it <container> <comando['/bin/sh', 'bash']> = executa a sheel do container em execucao
+docker build -t <nome> . = cria uma image paparti do arquivo Dockerfile
+--name = seta um nome para o container na criaçao
+docker attach <container> = inicia a sheel do container
