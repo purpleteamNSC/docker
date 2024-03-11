@@ -25,3 +25,7 @@ docker build -t purpleteamvtx/nginx-nano:latest .
 
 # 7 - Subindo imagem para docker hub
 docker push purpleteamvtx/nginx-nano:latest
+
+# 8 - Criando Rede (network)
+docker network create --driver bridge minharede
+
