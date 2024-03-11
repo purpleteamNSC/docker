@@ -20,7 +20,7 @@ docker create volume meuvolume
 # 5 - Usando volume criado como persistencia
 docker run -d --name web -p 8080:80 --mount type=volume,source=meuvolume,target=/app nginx
 
-# 6 - Criando uma imagem personalizada aparti do Dockerfile
+# 6 - Criando uma imagem personalizada apartir do Dockerfile
 docker build -t purpleteamvtx/nginx-nano:latest .
 
 # 6.1 - Criando com imagem com dockerfile em outra pasta 
@@ -31,6 +31,9 @@ docker push purpleteamvtx/nginx-nano:latest
 
 # 8 - Criando Rede (network)
 docker network create --driver bridge minharede
+
+# 8.1 - Conectando a uma rede existente
+docker network connect minharede maquinax
 
 # 9 - Acessando host local atraves do container
 curl http://host.docker.internal:8000
