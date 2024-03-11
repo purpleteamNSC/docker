@@ -32,3 +32,7 @@ docker push purpleteamvtx/nginx-nano:latest
 # 8 - Criando Rede (network)
 docker network create --driver bridge minharede
 
+# 9 - Acessando host local atraves do container
+curl http://host.docker.internal:8000
+
+
