@@ -19,3 +19,6 @@ docker create volume meuvolume
 
 # 5 - Usando volume criado como persistencia
 docker run -d --name web -p 8080:80 --mount type=volume,source=meuvolume,target=/app nginx
+
+# 6 - Criando uma imagem personalizada aparti do Dockerfile
+docker build -t purpleteamvtx/nginx-nano:latest .
