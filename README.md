@@ -39,3 +39,5 @@ docker network connect minharede maquinax
 curl http://host.docker.internal:8000
 
 
+
+
