@@ -12,4 +12,4 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
     
 RUN php composer.phar create-project laravel/laravel:^8.0 laravel
 
-ENTRYPOINT [ "php","laravel/artisan" ]
+ENTRYPOINT [ "php","laravel/artisan","serve" ]
