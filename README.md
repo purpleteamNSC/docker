@@ -23,6 +23,9 @@ docker run -d --name web -p 8080:80 --mount type=volume,source=meuvolume,target=
 # 6 - Criando uma imagem personalizada aparti do Dockerfile
 docker build -t purpleteamvtx/nginx-nano:latest .
 
+# 6.1 - Criando com imagem com dockerfile em outra pasta 
+docker build -t purpleteamvtx/site:latest -f site/Dockerfile .
+
 # 7 - Subindo imagem para docker hub
 docker push purpleteamvtx/nginx-nano:latest
 
